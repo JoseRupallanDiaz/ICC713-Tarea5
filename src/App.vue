@@ -1,10 +1,20 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <UserVue/>
 </template>
+
+<script>
+import HomeView from '@/views/HomeView.vue'
+import UserVue from '@/views/UserView.vue'
+
+export default {
+    name: 'UserInfo',
+    components: {
+      HomeView,
+      UserVue
+    }
+}
+</script>
+
 
 <style>
 #app {
